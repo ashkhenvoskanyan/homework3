@@ -19,23 +19,24 @@ const plus = 10
 const result = function () {
  kg.kg = kg.kg + plus
 };
-c()
+result()
 console.log(kg.kg );
 
 // 4 
-const string1 = "hi everyone"
-const string2 = "have a good day"
-const string3 = "be happy"
+const string1 = "hi everyone";
+const string2 = "have a good day";
+const string3 = "be happy";
 const f = function (string1, string2, string3){
-	if (a.length > b.length){
-		if(a.length > c.length){
-			return a;
+	if (string1.length > string2.length){
+		if(string1.length > string3.length){
+			return string1;
 		}
-	} else if (b.length > c.length){
-		return b
-	} else {return c}
+	} 
+  else if (string2.length > string3.length){
+		return string2;
+  } else {return string3;}
 };
-console.log(f())
+console.log(f(string1, string2, string3));
 
 // 5 
 const numbers = function (a,b){
@@ -58,10 +59,9 @@ console.log(multiply(20, 5))
 
 // 7+ 
 const divide = function (a, b){
-	return = a/b
+	return  a/b
 };
 console.log(divide(6,3))
-
 // 8 
 const triangleArea = function (base, height){
 	return divide(multiply(base, height), 2);
@@ -70,12 +70,12 @@ const TArea= triangleArea(3, 4);
 console.log(TArea);
 
 // 9 
-const numlngth = function(n) {
+const numlength = function(n) {
 	const numToString = n + "";
-	return numToString.legth;
+	return numToString.length;
 }
 
-const check = numlngth(123456);
+const check = numlength(123456);
 console.log(check);
 
 // 10 
@@ -87,8 +87,9 @@ const strings = function (word1 , word2 , number){
  	return -1
  }
 }; 
-const check = wordsLength("barev dzez", "inchpes eq", 5)
+const check = strings("barev dzez", "inchpes eq", 5)
 console.log(check)
+
 
 // 11
 const runStuff= function (num1, num2, string1) {
@@ -105,3 +106,5 @@ const runStuff= function (num1, num2, string1) {
 	}
 
 }
+const check = runStuff(5, 6, "rectangle")
+console.log(check)
